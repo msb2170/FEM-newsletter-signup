@@ -20,15 +20,23 @@
                 <li class="list-item">And much more!</li>
             </ul>
             <label for="email">Email Address:</label>
-            <input type="text" id="email" name="email">
-            <button type="submit">
-                Subscribe to monthly newsletter
+            <input type="text" id="email" name="email" placeholder="email@company.com">
+            <button type="submit" onclick="handleClick()" id="button">
+                <strong>Subscribe to monthly newsletter</strong>
             </button>
         </div>
         <div class="right-column">
             <img src="./assets/illustration-sign-up-desktop.svg" alt="a stylized illustration of a graph and a computer">
         </div>
     </div>
+
+    <!--Success card-->
+    <div class="success-container">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to (email here). Please open it and click the button inside to confirm your subscription</p>
+      <button>Dismiss message</button>
+    </div>
+    
   </main>
 
   <footer>

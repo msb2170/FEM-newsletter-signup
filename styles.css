@@ -10,18 +10,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--color-dark-slate-grey);
     color: hsl(231, 7%, 60%);
+    
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
   }
 
-  ul {
-    list-style-position: inside;
-    list-style-image: url(./assets/icon-list.svg);
-  }
+
   
   main{
     display: flex;
@@ -29,25 +27,71 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     align-items: center;
     background-color: var(--color-dark-slate-grey);
   }
-
+  
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5%;
+    width: 60%;
     background-color: var(--color-white);
-    margin-top: 0.6rem;
+    margin-top: 1.6rem;
   }
   
   .left-column {
     flex: 1;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 30vw;
+  }
+  
+  .large-header {
+    color: var(--color-dark-slate-grey);
+    font-size: 2.5rem;
+  }
+  
+  .desc {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark-slate-grey);
   }
 
-  .large-header {
+  ul {
+    list-style-position: inside;
+    list-style-image: url(./assets/icon-list.svg);
+    margin-bottom: 1rem;
     color: var(--color-dark-slate-grey);
   }
   
+  label {
+    margin-bottom: 0.5rem;
+    color: var(--color-dark-slate-grey);
+  }
+
+  input {
+    margin-bottom: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+    height: 7vh;
+  }
+
+  input::placeholder {
+    padding: 10px;
+  }
+  
+  button {
+    background-color: var(--color-dark-slate-grey);
+    height: 8vh;
+    color: white;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    background-color: var(--color-primary);
+  }
+
   .right-column {
     flex: 1;
     padding: 1rem;
@@ -65,9 +109,12 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     font-size: xx-small;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background-color: var(--color-dark-slate-grey);
-    height: fit-content
+  }
+
+  .success-container {
+    display: none;
   }
   
   /* Colors */
