@@ -1,0 +1,92 @@
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add your custom styles below */
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 7%, 60%);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+
+  ul {
+    list-style-position: inside;
+    list-style-image: url(./assets/icon-list.svg);
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-slate-grey);
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    background-color: var(--color-white);
+    margin-top: 0.6rem;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .large-header {
+    color: var(--color-dark-slate-grey);
+  }
+  
+  .right-column {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .right-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Add any additional styles for the image here */
+  }
+  
+  
+  footer {
+    font-size: xx-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-slate-grey);
+    height: fit-content
+  }
+  
+  /* Colors */
+  :root {
+    --color-primary: hsl(4, 100%, 67%);
+    --color-dark-slate-grey: hsl(234, 29%, 20%);
+    --color-charcoal-grey: hsl(235, 18%, 26%);
+    --color-grey: hsl(231, 7%, 60%);
+    --color-white: hsl(0, 0%, 100%);
+  }
+  
+  /* Layout */
+  @media (min-width: 375px) {
+    /* Mobile styles */
+    /* Adjust layout for mobile */
+  }
+  
+  @media (min-width: 1440px) {
+    /* Desktop styles */
+    /* Adjust layout for desktop */
+  }
+  
