@@ -19,7 +19,13 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     font-weight: 700;
   }
 
+  .show {
+    display: block;
+  }
 
+  .hide {
+    display: none;
+  }
   
   main{
     display: flex;
@@ -107,16 +113,33 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   
   footer {
     font-size: xx-small;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     background-color: var(--color-dark-slate-grey);
+    position: fixed;
+    left: 45%;
+    bottom: 0;
   }
 
   .success-container {
     display: none;
+    flex-direction: column;
+    background-color: var(--color-white);
+    color: var(--color-dark-slate-grey);
+    border-radius: 5px;
+    width: 40%;
+    margin-top: 15%;
+    text-align: left;
+    padding: 1rem;
   }
-  
+
+  .success-container > img {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .success-container > img, h1, p {
+    margin-bottom: 10px;
+  } 
   /* Colors */
   :root {
     --color-primary: hsl(4, 100%, 67%);

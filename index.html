@@ -10,7 +10,7 @@
 <body>
 
   <main>
-    <div class="container">
+    <div class="container" id="container">
         <div class="left-column">
             <h1 class="large-header">Stay Updated!</h1>
             <h4 class="desc">Join 60,000+ product managers receiving monthly updates on</h4>
@@ -20,8 +20,8 @@
                 <li class="list-item">And much more!</li>
             </ul>
             <label for="email">Email Address:</label>
-            <input type="text" id="email" name="email" placeholder="email@company.com">
-            <button type="submit" onclick="handleClick()" id="button">
+            <input type="email" id="email" name="email" placeholder="email@company.com">
+            <button type="submit" id="button">
                 <strong>Subscribe to monthly newsletter</strong>
             </button>
         </div>
@@ -31,10 +31,11 @@
     </div>
 
     <!--Success card-->
-    <div class="success-container">
+    <div class="success-container" id="success-container">
+      <img src="./assets/icon-success.svg" alt="a white checkmark with an orange background">
       <h1>Thanks for subscribing!</h1>
       <p>A confirmation email has been sent to (email here). Please open it and click the button inside to confirm your subscription</p>
-      <button>Dismiss message</button>
+      <button id="dismiss">Dismiss message</button>
     </div>
     
   </main>
