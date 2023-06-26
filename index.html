@@ -12,6 +12,7 @@
   <main>
     <div class="container" id="container">
         <div class="left-column">
+            <div class="mobile-img-container"><img src="./assets/illustration-sign-up-mobile.svg" alt="illustration of computers and graphs"></div>
             <h1 class="large-header">Stay Updated!</h1>
             <h4 class="desc">Join 60,000+ product managers receiving monthly updates on</h4>
             <ul>
@@ -19,8 +20,8 @@
                 <li class="list-item">Measuring to ensure updates are a success</li>
                 <li class="list-item">And much more!</li>
             </ul>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="email@company.com">
+            <label for="email">Email Address:</label><span class="warn-text" id="warn-text">Please enter a valid email address</span>
+            <input type="email" id="email" name="email" placeholder="email@company.com" required>
             <button type="submit" id="button">
                 <strong>Subscribe to monthly newsletter</strong>
             </button>
